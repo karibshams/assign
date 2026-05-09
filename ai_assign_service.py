@@ -25,8 +25,8 @@ class AIAssignService:
     and returning the best driver assignment decision.
     """
 
-    MODEL = "gpt-4o"
-    MAX_TOKENS = 1024
+    MODEL = "gpt-4o-mini"
+    MAX_TOKENS = 500
     TEMPERATURE = 0
 
     SYSTEM_PROMPT = """
