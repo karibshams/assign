@@ -1,0 +1,39 @@
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+*.log
+.env
+.venv
+.vscode/
+__pycache__/
+env/
+venv/
+ENV/
+build/
+# Python virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables file
+.env
+
+# Vector store index and cache files
+vector_store/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode settings and workspace
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,73 @@
+{
+  "trip": {
+    "trip_id": "T-2403",
+    "pickup_time": "2025-01-15T10:00:00",
+    "approximate_dropoff_time": "2025-01-15T10:45:00",
+    "pickup_address": "789 Pine Rd, Eastside, Los Angeles, CA",
+    "dropoff_address": "Dialysis Center, North LA, CA",
+    "special_requirements": "wheelchair_accessible",
+    "pickup_gps": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    }
+  },
+  "drivers": [
+    {
+      "driver_id": "D-101",
+      "driver_name": "Robert Chen",
+      "is_available": true,
+      "vehicle_types": ["van", "wheelchair_accessible"],
+      "current_load": 4,
+      "distance_miles": 3.2,
+      "last_gps": { "lat": 34.0580, "lng": -118.2780 },
+      "scheduled_trips": [
+        { "start": "2025-01-15T08:00:00", "end": "2025-01-15T09:00:00" },
+        { "start": "2025-01-15T11:30:00", "end": "2025-01-15T12:30:00" }
+      ]
+    },
+    {
+      "driver_id": "D-102",
+      "driver_name": "Sarah Ahmed",
+      "is_available": true,
+      "vehicle_types": ["sedan"],
+      "current_load": 2,
+      "distance_miles": 1.5,
+      "last_gps": { "lat": 34.0495, "lng": -118.2550 },
+      "scheduled_trips": []
+    },
+    {
+      "driver_id": "D-103",
+      "driver_name": "James Park",
+      "is_available": false,
+      "vehicle_types": ["van", "wheelchair_accessible"],
+      "current_load": 1,
+      "distance_miles": 2.0,
+      "last_gps": { "lat": 34.0610, "lng": -118.2300 },
+      "scheduled_trips": []
+    },
+    {
+      "driver_id": "D-104",
+      "driver_name": "Lisa Wong",
+      "is_available": true,
+      "vehicle_types": ["wheelchair_accessible"],
+      "current_load": 3,
+      "distance_miles": 2.8,
+      "last_gps": { "lat": 34.0450, "lng": -118.2600 },
+      "scheduled_trips": [
+        { "start": "2025-01-15T09:30:00", "end": "2025-01-15T10:30:00" }
+      ]
+    },
+    {
+      "driver_id": "D-105",
+      "driver_name": "Ahmed Malik",
+      "is_available": true,
+      "vehicle_types": ["wheelchair_accessible", "van"],
+      "current_load": 2,
+      "distance_miles": 4.1,
+      "last_gps": { "lat": 34.0700, "lng": -118.2900 },
+      "scheduled_trips": [
+        { "start": "2025-01-15T07:00:00", "end": "2025-01-15T08:30:00" }
+      ]
+    }
+  ]
+}
