@@ -25,8 +25,8 @@ class AIAssignService:
     and returning the best driver assignment decision.
     """
 
-    MODEL = "gpt-4o-mini"
-    MAX_TOKENS = 500
+    MODEL = "gpt-4o"
+    MAX_TOKENS = 1024
     TEMPERATURE = 0
 
     SYSTEM_PROMPT = """
@@ -76,6 +76,13 @@ Respond ONLY with this JSON, nothing else:
         }
 
     def _parse_response(self, raw_text: str, trip_id: str) -> Optional[dict]:
+        # Strip markdown code fences if present (e.g. ```json ... ```)
+        if raw_text.startswith("```"):
+            raw_text = raw_text.split("```")[1]
+            if raw_text.startswith("json"):
+                raw_text = raw_text[4:]
+            raw_text = raw_text.strip()
+
         try:
             decision = json.loads(raw_text)
         except json.JSONDecodeError as e:
